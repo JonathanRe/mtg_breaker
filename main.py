@@ -1,10 +1,10 @@
 def main():
     #
     print("MTG Breaker for Rough Drafts")
-    print("Enter file name (without file extension):")
+    print("Enter file name:")
     file_name = input("--> ")
     try:
-        with open(file_name + ".txt") as f:
+        with open(file_name) as f:
             for line in f:
                 process(line)
     except FileNotFoundError:
